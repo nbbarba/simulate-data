@@ -4,10 +4,10 @@
 # 2025-10-21
 
 # Simulate Predictor Variable
-predictor <- rnorm(n = 100)
+predictor <- rnorm(n = 200)
 
 # Simulate Response Variable with Noise
-response <- 2 * predictor  + rnorm(n = 100, sd = 0.2)
+response <- 2 * predictor  + rnorm(n = length(predictor), sd = 0.2)
 
 #Plot the Data
 plot(x = predictor, y = response)
